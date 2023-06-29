@@ -3501,12 +3501,33 @@ h6 {
     transition: transform 2000ms ease, opacity 2000ms ease, color 500ms ease, background 500ms ease, -webkit-transform 2000ms ease;
 }
 
+.main-slider .enter-button {
+    opacity: 0;
+    -webkit-transform: translateY(100px);
+    transform: translateY(100px);
+    -webkit-transition-delay: 2500ms;
+    transition-delay: 2500ms;
+    -webkit-transition: opacity 2000ms ease, color 500ms ease, background 500ms ease, -webkit-transform 2000ms ease;
+    transition: opacity 2000ms ease, color 500ms ease, background 500ms ease, -webkit-transform 2000ms ease;
+    transition: transform 2000ms ease, opacity 2000ms ease, color 500ms ease, background 500ms ease;
+    transition: transform 2000ms ease, opacity 2000ms ease, color 500ms ease, background 500ms ease, -webkit-transform 2000ms ease;
+}
+
 .main-slider .swiper-slide-active .image-layer {
     -webkit-transform: scale(1.03);
     transform: scale(1.03);
 }
 
 .main-slider .swiper-slide-active .thm-btn,
+.main-slider .swiper-slide-active h2,
+.main-slider .swiper-slide-active p {
+    visibility: visible;
+    opacity: 1;
+    -webkit-transform: translateY(0) translateX(0);
+    transform: translateY(0) translateX(0);
+}
+
+.main-slider .swiper-slide-active .enter-button,
 .main-slider .swiper-slide-active h2,
 .main-slider .swiper-slide-active p {
     visibility: visible;
@@ -4755,8 +4776,53 @@ h6 {
 # Footer
 --------------------------------------------------------------*/
 
+.enter-button {
+    background-color: #54378f;
+    color: white;
+    border-radius: 25px;
+    padding: 15px 30px;
+    font-size: 25px;
+    font-weight: 500;
+    display: inline-block;
+    -webkit-transition: 500ms;
+    transition: 500ms;
+    margin-top: 20px;
+}
+
+.enter-button:hover {
+    background-color: #fff;
+    color: #54378f;
+    border-radius: 25px;
+    padding: 15px 30px;
+    font-size: 25px;
+    font-weight: 500;
+    display: inline-block;
+    -webkit-transition: 500ms;
+    transition: 500ms;
+    margin-top: 20px;
+}
+
+
+/* mostrar el boton solo en desktop */
+
+@media (max-width: 768px) {
+    .enter-button {
+        display: none;
+    }
+}
+
+
+/* bajar el boton en desktop */
+
+@media (min-width: 768px) {
+    .enter-button {
+        position: absolute;
+        right: 0px;
+    }
+}
+
 .main-footer {
-    background-color: var(--thm-black);
+    background-color: #676672;
     position: relative;
 }
 
@@ -4767,7 +4833,7 @@ h6 {
     left: 0;
     right: 0;
     bottom: 0;
-    background-image: url(../images/backgrounds/footer-bg-1-1.png);
+    background-image: url(../images/backgrounds/feature-bg-1-1.png);
     opacity: .5;
 }
 
