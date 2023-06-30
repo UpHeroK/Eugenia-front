@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="Content-Security-Policy" content="frame-ancestors 'self' https://docs.google.com/;">
+    <!-- <meta http-equiv="Content-Security-Policy" content="frame-ancestors 'self' https://docs.google.com/;"> -->
     <title>Eugenia Alcalde</title>
     <!-- favicons Icons -->
     <link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicons/apple-touch-icon.png">
@@ -39,9 +39,9 @@
 
         <header class="main-header">
             <div class="container">
-                <div class="inner-container">
+                <div class="inner-container" style="height: 130px;">
                     <div class="row">
-                        <div class="col-sm-12 col-md-12 col-lg-12 col-xl-2">
+                        <div class="col-sm-12 col-md-12 col-lg-12 col-xl-2" style="height: 130px;">
                             <div class="logo-box">
                                 <a href="index.html" aria-label="logo image"><img src="assets/images/logo-dark.png" width="101" alt=""></a>
                                 <span class="fa fa-bars mobile-nav__toggler"></span>
@@ -49,9 +49,9 @@
                             <!-- /.logo-box -->
                         </div>
                         <!-- /.col-sm-12 -->
-                        <div class="col-sm-12 col-md-12 col-lg-12 col-xl-10 d-none d-md-none d-lg-none d-xl-block">
+                        <div class="col-sm-12 col-md-12 col-lg-12 col-xl-10 d-none d-md-none d-lg-none d-xl-block" style="height: 130px;">
 
-                            <nav class="main-menu dynamic-radius" style="margin-top: 30px;">
+                            <nav class="main-menu dynamic-radius" style="margin-top: 20px;">
                                 <ul class="main-menu__list">
                                     <li>
                                         <!-- class="dropdown" -->
@@ -64,7 +64,7 @@
                                 <!-- /.main-menu__list -->
                             </nav>
                             <!-- /.main-menu -->
-                            <div class="main-header__info">
+                            <!-- <div class="main-header__info">
                                 <ul class="list-unstyled main-header__info-list">
                                     <li>
                                         <i class="azino-icon-email"></i>
@@ -72,9 +72,8 @@
                                     </li>
 
                                 </ul>
-                                <!-- /.list-unstyled -->
 
-                            </div>
+                            </div> -->
                             <!-- /.main-header__info -->
                         </div>
                         <!-- /.col-sm-12 -->
@@ -222,7 +221,7 @@
                             <!-- /.footer-widget footer-widget__link -->
                         </div>
                         <!-- /.col-lg-3 col-md-6 col-sm-12 -->
-                        <div class="col-lg-6 col-md-6 col-sm-12 d-flex align-items-center">
+                        <div class="col-lg-6 col-md-6 col-sm-12 d-flex align-items-center  justify-content-center">
                             <div class="footer-widget mb-40 footer-widget__blog">
                                 <ul class="list-unstyled footer-widget__contact" style="margin-bottom: 0;">
                                     <!-- enviar mensaje a gmail-->
@@ -326,20 +325,6 @@
     <script src="assets/js/theme.js"></script>
 
 </body>
-<style scoped>
-    /* necesito ahcer un media query que les aplique padding a la izquierda para desktop */
-    
-    .try {
-        padding-left: 0px !important;
-    }
-    
-    @media (min-width: 768px) {
-        .try {
-            padding-left: 60px !important;
-            /* aplica nowrap copilot */
-            overflow: visible;
-        }
-    }
-</style>
+
 
 </html>

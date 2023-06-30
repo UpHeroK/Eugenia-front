@@ -2494,8 +2494,8 @@ h6 {
 
 @media (min-width: 1200px) {
     .main-header .logo-box {
-        padding-right: 0;
-        padding-top: 55px;
+        padding: 0;
+        padding-top: 0px;
     }
 }
 
