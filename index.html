@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- <meta http-equiv="Content-Security-Policy" content="frame-ancestors 'self' https://docs.google.com/;"> -->
-    <title>Eugenia Alcalde</title>
+    <title>Eugenia Alcaldesa</title>
     <!-- favicons Icons -->
     <link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicons/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicons/favicon-32x32.png">
@@ -43,7 +43,7 @@
                     <div class="row">
                         <div class="col-sm-12 col-md-12 col-lg-12 col-xl-2" style="height: 130px;">
                             <div class="logo-box">
-                                <a href="index.html" aria-label="logo image"><img src="assets/images/logo-dark.png" width="101" alt=""></a>
+                                <a href="index.html" aria-label="logo image"><img src="assets/images/logo-dark.png" class="dinamic_logo_width" alt=""></a>
                                 <span class="fa fa-bars mobile-nav__toggler"></span>
                             </div>
                             <!-- /.logo-box -->
@@ -188,11 +188,12 @@
                         </div>
                     </div>
                     <!-- /.col-lg-6 -->
-                    <div class="col-lg-6" style="position: relative; padding-bottom: 92.19%; height: 0; overflow: hidden;">
-                        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSfbQQn6UjKDSZHAM7NXh1_f27GrrfTKL9gMT9p5aBrWwfn3VQ/viewform?embedded=true" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" frameborder="0" marginheight="0" marginwidth="0">
+                    <div class="col-lg-6" style="position: relative; padding-bottom: 92.19%; height: 0; overflow: hidden; margin-bottom: 20px;">
+                        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLSewpupA6Kr458zlm7nVnrsEPgKI-Xfmyk1HaiUfFQ6WcOcUMg/viewform?embedded=true&widget=true" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" frameborder="0" marginheight="10" marginwidth="0">
                             Cargando…
                         </iframe>
                     </div>
+
 
                     <!-- /.col-lg-6 -->
                 </div>
@@ -207,9 +208,9 @@
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-6 col-md-6 col-sm-12">
-                            <div class="footer-widget mb-40 footer-widget__about">
+                            <div class="footer-widget mb-40 footer-widget__about dinamic-padding-footer">
                                 <a href="index.html" aria-label="logo image">
-                                    <img src="assets/images/logo-light.png" class="footer-widget__logo" width="101" alt="">
+                                    <img src="assets/images/logo-light.png" class="footer-widget__logo dinamic_logo_width" alt="logo_footer">
                                 </a>
                                 <p style="color:white">Lorem ipsum dolor sit amet consect etur adi pisicing elit sed.</p>
 
@@ -227,7 +228,7 @@
                                     <!-- enviar mensaje a gmail-->
                                     <li class="try" style="margin:0px; min-height: 20px; padding:0px;"><a href="mailto:jmcconsultoriajuridica@gmail.com"><i style="color:black;" class="azino-icon-email"></i> jmcconsultoriajuridica@gmail.com</a></li>
                                     <li class="try" style="margin:0px; min-height: 20px; padding:0px;"><a href="#"><i style="color:black;" class="fab fa-whatsapp"></i>322 393 7616</a></li>
-                                    <li class="try" style="margin:0px; min-height: 20px; padding:0px;"><a href="https://www.facebook.com/eugenia.alcaldeza" target="_blank"><i style="color:black;" class="fab fa-facebook-square"></i>eugenia.alcaldeza</a></li>
+                                    <li class="try" style="margin:0px; min-height: 20px; padding:0px;"><a href="https://www.facebook.com/ear.genny" target="_blank"><i style="color:black;" class="fab fa-facebook-square"></i>Eugenia Aguilar Rueda</a></li>
                                     <li class="try" style="margin:0px; min-height: 20px; padding:0px;"><a href="https://www.instagram.com/eugeniaaguilar.piede/" target="_blank"><i style="color:black;" class="fab fa-instagram"></i>eugeniaaguilar.piede</a></li>
                                 </ul>
                                 <!-- /.footer-widget__blog -->
@@ -288,7 +289,7 @@
                 </li>
                 <li>
                     <i class="fab fa-facebook-square"></i>
-                    <a href="https://www.facebook.com/eugenia.alcaldeza" target="_blank">eugenia.alcaldeza</a>
+                    <a href="https://www.facebook.com/ear.genny" target="_blank">Eugenia Aguilar Rueda</a>
                 </li>
                 <li>
                     <i class="fab fa-instagram"></i>
@@ -325,6 +326,22 @@
     <script src="assets/js/theme.js"></script>
 
 </body>
+<style>
+        .dinamic-padding-footer {
+        padding-top: 7%;
+    }
+    
+    .dinamic_logo_width {
+        width: 140px;
+    }
+    /* despues de table ancho de 200px */
+    
+    @media (min-width: 768px) {
+        .dinamic_logo_width {
+            width: 200px;
+        }
+</style>
+
 
 
 </html>
