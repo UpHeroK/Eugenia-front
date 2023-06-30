@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Eugenia Alcaldeza</title>
+    <meta http-equiv="Content-Security-Policy" content="frame-ancestors 'self' https://docs.google.com/;">
+    <title>Eugenia Alcalde</title>
     <!-- favicons Icons -->
     <link rel="apple-touch-icon" sizes="180x180" href="assets/images/favicons/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="assets/images/favicons/favicon-32x32.png">
@@ -52,21 +53,10 @@
 
                             <nav class="main-menu dynamic-radius" style="margin-top: 30px;">
                                 <ul class="main-menu__list">
-                                    <li class="dropdown">
-                                        <a href="index.html">Home</a>
-                                        <ul>
-                                            <li>
-                                                <a href="index.html">Home One</a>
-                                            </li>
-                                            <li><a href="index-2.html">Home Two</a></li>
-                                            <li class="dropdown">
-                                                <a href="#">Header Styles</a>
-                                                <ul>
-                                                    <li><a href="index.html">Header One</a></li>
-                                                    <li><a href="index-2.html">Header Two</a></li>
-                                                </ul>
-                                            </li>
-                                        </ul>
+                                    <li>
+                                        <!-- class="dropdown" -->
+                                        <a href="index.html">Inicio</a>
+
                                     </li>
 
 
@@ -232,15 +222,20 @@
                             <!-- /.footer-widget footer-widget__link -->
                         </div>
                         <!-- /.col-lg-3 col-md-6 col-sm-12 -->
-                        <div class="col-lg-6 col-md-6 col-sm-12">
+                        <div class="col-lg-6 col-md-6 col-sm-12 d-flex align-items-center">
                             <div class="footer-widget mb-40 footer-widget__blog">
-                                <ul class="list-unstyled footer-widget__contact">
-                                    <li><a href="#"><i class="azino-icon-email"></i>eugeniaalcaldes@gmail.com</a></li>
+                                <ul class="list-unstyled footer-widget__contact" style="margin-bottom: 0;">
+                                    <!-- enviar mensaje a gmail-->
+                                    <li class="try" style="margin:0px; min-height: 20px; padding:0px;"><a href="mailto:jmcconsultoriajuridica@gmail.com"><i style="color:black;" class="azino-icon-email"></i> jmcconsultoriajuridica@gmail.com</a></li>
+                                    <li class="try" style="margin:0px; min-height: 20px; padding:0px;"><a href="#"><i style="color:black;" class="fab fa-whatsapp"></i>322 393 7616</a></li>
+                                    <li class="try" style="margin:0px; min-height: 20px; padding:0px;"><a href="https://www.facebook.com/eugenia.alcaldeza" target="_blank"><i style="color:black;" class="fab fa-facebook-square"></i>eugenia.alcaldeza</a></li>
+                                    <li class="try" style="margin:0px; min-height: 20px; padding:0px;"><a href="https://www.instagram.com/eugeniaaguilar.piede/" target="_blank"><i style="color:black;" class="fab fa-instagram"></i>eugeniaaguilar.piede</a></li>
                                 </ul>
                                 <!-- /.footer-widget__blog -->
                             </div>
                             <!-- /.footer-widget footer-widget__blog -->
                         </div>
+
                         <!-- /.col-lg-3 col-md-6 col-sm-12 -->
                     </div>
                     <!-- /.row -->
@@ -275,7 +270,6 @@
         <!-- /.mobile-nav__overlay -->
         <div class="mobile-nav__content">
             <span class="mobile-nav__close mobile-nav__toggler"><i class="far fa-times"></i></span>
-
             <div class="logo-box">
                 <a href="index.html" aria-label="logo image"><img src="assets/images/logo-light.png" width="101" alt="" /></a>
             </div>
@@ -286,8 +280,23 @@
             <ul class="mobile-nav__contact list-unstyled">
                 <li>
                     <i class="azino-icon-email"></i>
-                    <a href="mailto:eugeniaalcaldes@gmail.com">eugeniaalcaldes@gmail.com</a>
+                    <a href="mailto:jmcconsultoriajuridica@gmail.com">jmcconsultoriajuridica@gmail.com</a>
                 </li>
+                <li>
+                    <!-- wasa -->
+                    <i class="fab fa-whatsapp"></i>
+                    <a href="#">322 393 7616</a>
+                </li>
+                <li>
+                    <i class="fab fa-facebook-square"></i>
+                    <a href="https://www.facebook.com/eugenia.alcaldeza" target="_blank">eugenia.alcaldeza</a>
+                </li>
+                <li>
+                    <i class="fab fa-instagram"></i>
+                    <a href="https://www.instagram.com/eugeniaaguilar.piede/" target="_blank">eugeniaaguilar.piede</a>
+                </li>
+
+
 
             </ul>
             <!-- /.mobile-nav__contact -->
@@ -317,5 +326,20 @@
     <script src="assets/js/theme.js"></script>
 
 </body>
+<style scoped>
+    /* necesito ahcer un media query que les aplique padding a la izquierda para desktop */
+    
+    .try {
+        padding-left: 0px !important;
+    }
+    
+    @media (min-width: 768px) {
+        .try {
+            padding-left: 60px !important;
+            /* aplica nowrap copilot */
+            overflow: visible;
+        }
+    }
+</style>
 
 </html>
